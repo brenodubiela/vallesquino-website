@@ -1,0 +1,260 @@
+@import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-primary: #e5ac5e;
+  --color-primary-hover: color-mix(in oklab, #e5ac5e 88%, #2d3114);
+  --color-olive: #2d3114;
+  --color-forest: #0b3c2d;
+  --color-beige: #f4e9d4;
+  --color-canvas: #fdf9f2;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f9f9f9;
+  --color-surface-dark: #2d3114;
+  --color-ink: #34363e;
+  --color-muted: #555555;
+  --color-on-dark: #ffffff;
+  --color-on-dark-muted: rgb(255 255 255 / 0.78);
+  --color-border: #f4e9d4;
+  --color-border-on-dark: rgb(255 255 255 / 0.18);
+  --color-bronze: #64562a;
+  --color-bronze-deep: #6b4715;
+  --color-ink-strong: #202020;
+  --color-hairline: #e0e0e0;
+  --color-field-border: #e2e8f0;
+  --color-field-label: #18213c;
+  --color-field-placeholder: #a1a1aa;
+  --color-tag-border: #e8e8e8;
+  --color-tag-text: #4a4a4a;
+  --color-danger: #b3261e;
+
+  --text-*: initial;
+  --text-display: clamp(2.25rem, 1.65rem + 2.4vw, 3.375rem);
+  --text-display--line-height: 1.2;
+  --text-display--font-weight: 700;
+  --text-title: 1.5rem;
+  --text-title--line-height: 1;
+  --text-title--font-weight: 600;
+  --text-lead: 1.125rem;
+  --text-lead--line-height: 1.2;
+  --text-lead--font-weight: 400;
+  --text-body: 1.125rem;
+  --text-body--line-height: 1;
+  --text-body--font-weight: 400;
+  --text-body-sm: 1rem;
+  --text-body-sm--line-height: 1.2;
+  --text-body-sm--font-weight: 400;
+  --text-button: 0.84375rem;
+  --text-button--line-height: normal;
+  --text-button--letter-spacing: 0.04em;
+  --text-button--font-weight: 700;
+  --text-nav: 0.8125rem;
+  --text-nav--line-height: normal;
+  --text-nav--letter-spacing: 0.05em;
+  --text-nav--font-weight: 500;
+  --text-eyebrow: 0.6875rem;
+  --text-eyebrow--line-height: normal;
+  --text-eyebrow--letter-spacing: 0.12em;
+  --text-eyebrow--font-weight: 700;
+  --text-footer: 0.96875rem;
+  --text-footer--line-height: 1.26;
+  --text-footer--font-weight: 400;
+  --text-footer-link: 0.90625rem;
+  --text-footer-link--line-height: normal;
+  --text-footer-link--font-weight: 400;
+  --text-caption: 0.78125rem;
+  --text-caption--line-height: 1.5;
+  --text-caption--font-weight: 400;
+
+  --text-index: 1.5rem;
+  --text-index--line-height: 1;
+  --text-index--letter-spacing: -0.07em;
+  --text-index--font-weight: 600;
+  --text-index-lg: 3.875rem;
+  --text-index-lg--line-height: 1;
+  --text-index-lg--letter-spacing: -0.027em;
+  --text-index-lg--font-weight: 600;
+  --text-field: 0.875rem;
+  --text-field--line-height: 1.25rem;
+  --text-field--font-weight: 400;
+  --text-tag: 0.75rem;
+  --text-tag--line-height: normal;
+  --text-tag--font-weight: 500;
+  --text-faq: 1rem;
+  --text-faq--line-height: 1.547;
+  --text-faq--font-weight: 400;
+
+  --leading-heading: 1.2;
+
+  --radius-tag: 8px;
+  --radius-card: 10px;
+  --radius-media: 16px;
+  --radius-form: 20px;
+  --radius-panel: 24px;
+  --radius-pill: 999px;
+
+  --spacing-section: 6rem;
+  --spacing-section-footer: 5rem;
+  --spacing-gutter: 3.125rem;
+  --container-site: 80rem;
+
+  --shadow-*: initial;
+  --shadow-header: 0 10px 40px 0 rgb(6 89 41 / 0.14);
+  --shadow-focus-ring: 0 0 0 3px rgb(229 172 94 / 0.55);
+
+  --blur-header: 7px;
+}
+
+@theme inline {
+  --font-serif: initial;
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-swaraga), ui-serif, Georgia, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+@layer components {
+  /* Estado inicial; a entrada é animada pelo RevealObserver (Web Animations API). */
+  [data-reveal] {
+    opacity: 0;
+    translate: 0 24px;
+  }
+
+  .cookie-banner {
+    animation: cookie-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  }
+
+  .page-loader {
+    animation: loader-overlay 1.35s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .page-loader__logo {
+    animation: loader-logo-out 1.35s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  .page-loader__v,
+  .page-loader__stroke,
+  .page-loader__star,
+  .page-loader__word {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  .page-loader__v {
+    animation: loader-v 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+  }
+
+  .page-loader__stroke {
+    animation: loader-stroke 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.15s backwards;
+  }
+
+  .page-loader__star {
+    animation:
+      loader-star 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s backwards,
+      loader-glow 0.9s ease-in-out 0.6s;
+  }
+
+  .page-loader__word {
+    animation: loader-word 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.5s backwards;
+  }
+
+  .page-loader__bar-fill {
+    transform-origin: left center;
+    animation: loader-bar 1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+  }
+
+  @keyframes cookie-in {
+    from {
+      opacity: 0;
+      translate: 0 100%;
+    }
+  }
+
+  @keyframes loader-overlay {
+    0%,
+    72% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  @keyframes loader-logo-out {
+    0%,
+    72% {
+      scale: 1;
+    }
+    100% {
+      scale: 0.94;
+    }
+  }
+
+  @keyframes loader-v {
+    from {
+      opacity: 0;
+      transform: translateY(-14%) scale(0.92);
+    }
+  }
+
+  @keyframes loader-stroke {
+    from {
+      opacity: 0;
+      transform: translate(-18%, 12%);
+    }
+  }
+
+  @keyframes loader-star {
+    from {
+      opacity: 0;
+      transform: scale(0) rotate(-120deg);
+    }
+  }
+
+  @keyframes loader-glow {
+    50% {
+      filter: drop-shadow(0 0 3px var(--color-primary));
+    }
+  }
+
+  @keyframes loader-word {
+    from {
+      opacity: 0;
+      transform: translateX(-6%);
+    }
+  }
+
+  @keyframes loader-bar {
+    from {
+      transform: scaleX(0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-reveal] {
+      opacity: 1;
+      translate: none;
+    }
+
+    .cookie-banner {
+      animation: none;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-canvas font-sans text-ink antialiased;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
