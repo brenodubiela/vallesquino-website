@@ -5,7 +5,7 @@ import { Heading } from "@/components/ui/heading";
 import { Reveal } from "@/components/ui/reveal";
 import { cn } from "@/utils/cn";
 
-export function Specialties({ id = "areas-titulo", heading, items, image, imageAlt, symbolClassName }) {
+export function Specialties({ id = "areas-titulo", heading, items, symbolClassName }) {
   return (
     <section aria-labelledby={id} className="relative isolate overflow-hidden bg-olive py-16 lg:py-section">
       <div aria-hidden="true" className={cn("pointer-events-none absolute -z-10", symbolClassName)}>
@@ -15,11 +15,11 @@ export function Specialties({ id = "areas-titulo", heading, items, image, imageA
       <Container className="grid gap-10 lg:grid-cols-[532fr_698fr] lg:gap-gutter">
         <Reveal className="relative aspect-4/5 overflow-hidden rounded-media sm:aspect-video lg:aspect-auto">
           <Image
-            src={image}
-            alt={imageAlt}
+            src="/images/solucoes-areas-reuniao.jpg"
+            alt="Médica conversando com um executivo em uma reunião, com um notebook e documentos sobre a mesa"
             fill
-            sizes="(min-width: 1280px) 532px, (min-width: 1024px) 42vw, 100vw"
-            className="object-cover"
+            sizes="(min-width: 1280px) 1143px, (min-width: 1024px) 150vw, (min-width: 640px) 100vw, 200vw"
+            className="object-cover object-[65.4%_center] lg:object-[71%_center] xl:object-[65.4%_center]"
           />
         </Reveal>
 

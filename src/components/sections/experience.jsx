@@ -19,13 +19,16 @@ export function Experience({ reverse = false }) {
             reverse && "lg:order-last",
           )}
         >
-          <Image
-            src="/images/dra-valeria.jpg"
-            alt="Dra. Valéria Vallesquino analisando um relatório ao lado de um notebook, diante de um ambiente fabril"
-            fill
-            sizes="(min-width: 1280px) 589px, (min-width: 1024px) 46vw, 100vw"
-            className="object-cover"
-          />
+          {/* Enquadramento do Figma: a foto é panorâmica e só o trecho da palestrante aparece. */}
+          <div className="absolute top-[-24.15%] left-[-72.91%] h-[124.11%] w-[217%] max-w-none">
+            <Image
+              src="/images/experiencia-palestra.jpg"
+              alt="Médica falando ao microfone em um auditório, ao lado da tela de uma apresentação sobre saúde mental"
+              fill
+              sizes="(min-width: 1280px) 1278px, (min-width: 1024px) 155vw, (min-width: 640px) 217vw, 340vw"
+              className="object-cover"
+            />
+          </div>
         </Reveal>
 
         <div className="flex max-w-160.25 flex-col gap-4">

@@ -76,8 +76,6 @@ async function SolucaoContent({ params }) {
       <Specialties
         heading={<Segments segments={areas.heading} />}
         items={areas.items}
-        image={areas.image}
-        imageAlt={areas.imageAlt}
         symbolClassName={areas.symbol}
       />
       <Experience reverse />

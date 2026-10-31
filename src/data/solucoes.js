@@ -41,8 +41,6 @@ export const solutionPages = {
     },
     areas: {
       heading: [{ text: "Áreas de especialidade ", accent: true }, { text: "e avaliação pericial" }],
-      image: "/images/pericias-medicas-areas.jpg",
-      imageAlt: "Dra. Valéria Vallesquino avaliando a amplitude de movimento do braço de um paciente durante exame pericial",
       symbol: `-top-[119px] ${darkSymbolBase}`,
       items: [
         {
@@ -104,8 +102,6 @@ export const solutionPages = {
     },
     areas: {
       heading: [{ text: "Frentes de atuação em " }, { text: "assistência técnica corporativa", accent: true }],
-      image: "/images/assistencia-tecnica-areas.jpg",
-      imageAlt: "Dra. Valéria Vallesquino orientando uma colaboradora em análise ergonômica de projetos no computador",
       symbol: `-top-[74px] ${darkSymbolBase}`,
       items: [
         {
@@ -167,8 +163,6 @@ export const solutionPages = {
     },
     areas: {
       heading: [{ text: "Principais demandas atendidas " }, { text: "em suporte decisório", accent: true }],
-      image: "/images/analise-tecnica-areas.jpg",
-      imageAlt: "Dra. Valéria Vallesquino apresentando relatórios e indicadores a gestores em uma sala de reuniões",
       symbol: `-top-[95px] ${darkSymbolBase}`,
       items: [
         {
@@ -230,8 +224,6 @@ export const solutionPages = {
     },
     areas: {
       heading: [{ text: "Focos de atuação em " }, { text: "Riscos Psicossociais", accent: true }],
-      image: "/images/riscos-psicossociais-areas.jpg",
-      imageAlt: "Dra. Valéria Vallesquino apresentando um mapeamento de fatores psicossociais para colaboradores reunidos em uma sala",
       symbol: `-top-[125px] ${darkSymbolBase}`,
       items: [
         {
@@ -293,8 +285,6 @@ export const solutionPages = {
     },
     areas: {
       heading: [{ text: "Aplicações do atendimento individualizado" }],
-      image: "/images/atendimento-individualizado-areas.jpg",
-      imageAlt: "Dra. Valéria Vallesquino em consulta com um paciente, fazendo anotações em uma prancheta",
       symbol: `-top-[119px] ${darkSymbolBase}`,
       items: [
         {

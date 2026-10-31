@@ -46,11 +46,11 @@ export function Commitments() {
 
         <Reveal delay={0.1} className="relative aspect-4/5 overflow-hidden rounded-media sm:aspect-video xl:aspect-auto">
           <Image
-            src="/images/compromissos-dra-valeria.jpg"
-            alt="Dra. Valéria Vallesquino revisando um documento ao lado de um tablet em seu escritório"
+            src="/images/compromissos-evento.jpg"
+            alt="Médica e um colega lado a lado em um estande de congresso"
             fill
             sizes="(min-width: 1280px) 589px, 100vw"
-            className="object-cover"
+            className="object-cover object-[50%_15%] xl:object-center"
           />
         </Reveal>
       </Container>

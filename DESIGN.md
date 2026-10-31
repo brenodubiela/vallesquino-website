@@ -308,9 +308,7 @@ padronizados em Montserrat (mesma decisão dos textos de card).
   logo + botão de menu (`mobile-menu.jsx`).
 - **Hero do Fale conosco**: arte deslocada 60px para a direita e ancorada à coluna do texto
   (`calc(max(2rem,50%-640px)+…)`) para o trecho dourado do título não encostar no símbolo dourado.
-- **Hero por página**: mesma estrutura em todas as páginas (foto + gradiente + símbolo + recorte;
-  em Análise Técnica e Atendimento o recorte também recebe o gradiente — `cutoutGradient` — para
-  disfarçar o corte da imagem atrás do texto),
+- **Hero por página**: mesma estrutura em todas as páginas (foto + gradiente + símbolo + recorte),
   com posição/tamanho da foto, gradiente e posição do símbolo vindos de `src/data/heroes.js`
   (valores exatos de cada frame do Figma).
 - **Template das soluções** (`/solucoes/[slug]`): Hero → Steps ("Passo") → Specialties (olive, foto
@@ -319,7 +317,8 @@ padronizados em Montserrat (mesma decisão dos textos de card).
 - **Hero mobile/tablet** (não existe no Figma): foto em tela cheia com gradiente vertical
   `olive → olive/85 → olive/40`; símbolo e recorte só a partir de `xl` (1280px). Entre 1024 e 1279px a
   arte centralizada encostava no texto (o dourado do título sumia sobre o símbolo), então essa faixa
-  também usa o tratamento mobile.
+  também usa o tratamento mobile. O foco horizontal da foto nessa faixa é `object-[70%_center]`, ajustável
+  por página em `photoPosition` (`src/data/heroes.js`).
 - **Seções com imagem + cards em 2 colunas** (`About`, `Commitments`, `SobrePratica`): lado a lado só a
   partir de `xl`; até 1279px empilham (imagem `aspect-video` + conteúdo em largura total) para os cards
   não ficarem com ~150px de largura.

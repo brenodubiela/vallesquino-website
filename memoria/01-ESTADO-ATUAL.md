@@ -1,6 +1,6 @@
 # 📍 01 — Estado Atual
 
-**Atualizado em:** 27/10/2026 · **Fase atual:** 4 concluída (estrutura) → próxima: **Fase 7** (webhook) / Fase 8
+**Atualizado em:** 31/10/2026 · **Fase atual:** 4 concluída (estrutura) → próxima: **Fase 7** (webhook) / Fase 8
 
 ## Onde estamos
 - Fases 1–3 ✅ e todas as páginas do Figma montadas (Home, Sobre, Soluções, 5 soluções, Fale conosco).
@@ -15,6 +15,8 @@
   das seções, responsividade revisada de 360 a 1920px.
 
 ## Verificação da última entrega
+- Heros de todas as páginas e fotos de "Experiência prática" e "Os compromissos" atualizados conforme
+  o Figma (31/10), conferidos de 390 a 1920px.
 - Lighthouse mobile (build de produção): Home 91 · Sobre 89 · Perícias 90 · Contato 89; desktop 97.
   Acessibilidade, boas práticas e SEO em 100 em todas. Antes: Home 66 · Perícias 84.
 - Chrome headless: 11 páginas × 7 larguras sem rolagem horizontal; todas as seções animam ao rolar;

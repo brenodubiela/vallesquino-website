@@ -152,3 +152,43 @@
 59. **"Trabalhe Conosco" removido** da linha legal do footer: a cliente não terá essa área (o link do
     Figma apontava para uma página inexistente, 404). A linha legal fica com Política, Termos e
     Preferências de cookies.
+
+## 31/10/2026 — Nova arte do hero da Sobre
+
+60. **Hero da Sobre trocado pela arte atual do Figma** (node `22102-39`): foto e recorte originais de
+    2752×1536 (`sobre-hero-analise*`, a foto em JPEG q92 para pesar menos no repositório), moldura em
+    x=20, 1985×1107 e novo degradê (33,879% / 56,111% / 99,999%). `alt` sem citar a Dra. Valéria, pois não
+    há confirmação de que seja ela na foto nova.
+61. **Fotos das seções "Experiência prática" e "Os compromissos" trocadas pelas atuais do Figma** (nodes
+    `22046-1580` e `22046-1623`). `Experience` é um só componente (Home, Sobre, Soluções e 5 soluções) e
+    reproduz o recorte do Figma com um wrapper (`top -24.15%`, `left -72.91%`, `217%` × `124.11%`), sem editar
+    o arquivo, que é panorâmico. `Commitments` só existe na Home; empilhada, usa `object-[50%_15%]` para não
+    cortar os rostos. `alt` das duas sem nomes, pois não há confirmação de quem aparece nas fotos.
+62. **Hero da Home com a arte atual do Figma** (node `22045-146`) **e a mesma foto no Fale conosco**, a pedido
+    (`hero-reuniao*`): moldura x=320, 2296×1292, símbolo em x=791, y=121. No contato a arte vai 60px à direita e
+    presa à coluna do texto (folga de 61px entre o dourado do título e o símbolo de 1280 a 1920px; substitui a
+    posição da decisão 44). Abaixo de `xl` as duas páginas usam `photoPosition` (`object-[28%_center]`) para a
+    médica ficar em quadro: o foco padrão de 70% mostraria só o laptop e o executivo.
+63. **Hero da Análise Técnica com a arte atual do Figma** (node `22102-1939`, `analise-estrategica-hero*`): moldura
+    x=99, 1824×1018, degradê próprio (31,798% / 54,591% / 90,315%) e recorte **sem** degradê, como no Figma: a pessoa
+    nova não passa por trás do texto (a decisão 42 agora vale só para o Atendimento). Título dourado sem encostar no
+    símbolo de 1280 a 1920px.
+64. **Hero da Assistência Técnica com a foto e o recorte atuais do Figma** (node `22102-1688`,
+    `assistencia-pericial-hero*`). Moldura, degradê e símbolo já eram os do Figma e não mudaram.
+65. **Hero do Atendimento com a foto e o recorte atuais do Figma** (node `22102-2439`,
+    `atendimento-presencial-hero*`). Moldura, degradê e símbolo não mudaram; o recorte agora vem sem degradê, como
+    no Figma, e nenhuma página usa mais o `cutoutGradient` (removido; a decisão 42 deixa de valer). Abaixo de `xl`
+    usa `object-[45%_center]` para a médica ficar em quadro.
+66. **Hero de Riscos Psicossociais com a foto e o recorte atuais do Figma** (node `22102-2191`, `riscos-nr1-hero*`).
+    Moldura, degradê e símbolo já eram os do Figma e não mudaram.
+67. **Heros de Soluções e Perícias com a foto e o recorte atuais do Figma** (nodes `22102-698` e `22102-1162`,
+    `solucoes-hero-indicadores*` e `pericias-hero-laudo*`). Perícias só trocou os arquivos. Em Soluções o Figma
+    enquadra a imagem dentro da moldura (x=146, 1777×992, cortada em x=329): a moldura do código passou a ser a área
+    real da foto e o degradê foi reprojetado (27,224% / 47,899% / 86,205%), com o mesmo resultado na tela.
+68. **Foto única na terceira seção das páginas de solução** (node `22102-1601`, `solucoes-areas-reuniao.jpg`): saiu de
+    `data/solucoes.js` e foi para dentro do `Specialties`, como no `Experience`, para as 5 páginas não divergirem. O
+    recorte do Figma (janela de 46,5% da largura a partir de 35%) vira `object-[65.4%_center]`; de 1024 a 1279px, com a
+    caixa estreita, usa 71% para os dois rostos ficarem em quadro.
+69. **Heros em telas maiores que 1920px ficam como estão**, por decisão do cliente: a foto de alguns heros termina antes
+    da borda direita e sobra uma faixa olive (a partir de 1920px em Assistência, 1926px em Soluções e Análise, 1996px em
+    Perícias, 2090px na Sobre e 2274px em Riscos e Atendimento). O Figma só vai até 1920px.

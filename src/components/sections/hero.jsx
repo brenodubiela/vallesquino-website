@@ -17,7 +17,7 @@ export function Hero({ art, title, titleClassName, lead, actions = [] }) {
             preload
             fetchPriority="high"
             sizes={art.sizes}
-            className="object-cover object-[70%_center] xl:object-center"
+            className={cn("object-cover object-[70%_center] xl:object-center", art.photoPosition)}
           />
           <div className="absolute inset-0 bg-linear-to-t from-olive via-olive/85 to-olive/40 xl:hidden" />
           <div className={cn("absolute inset-0 hidden xl:block", art.gradient)} />
@@ -34,7 +34,6 @@ export function Hero({ art, title, titleClassName, lead, actions = [] }) {
             sizes={`${art.sizes.split(",")[0]}, 1px`}
             className="object-cover"
           />
-          {art.cutoutGradient && <div className={cn("absolute inset-0", art.gradient)} />}
         </div>
       </div>
 
